@@ -1,6 +1,9 @@
 function sendMessage() {
   let input = document.getElementById("userInput").value;
   let chatbox = document.getElementById("chatbox");
+  if(input.trim()===""){
+    return;
+  }
 
   chatbox.innerHTML += "<p><b>You:</b> " + input + "</p>";
 
